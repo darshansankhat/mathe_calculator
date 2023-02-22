@@ -10,11 +10,10 @@ class Home_scrren extends StatefulWidget {
 }
 
 class _Home_scrrenState extends State<Home_scrren> {
-
-  int ans=0;
-  String no="";
-  int i=0;
-  int j=0;
+  double ans = 0;
+  String no = "";
+  int i = 0;
+  int j = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -43,19 +42,23 @@ class _Home_scrrenState extends State<Home_scrren> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      Text("$no",style: TextStyle(
-                        color: Color(0xff8D8D8D),
-                        fontSize: 30,
-                      ),),
+                      Text(
+                        "$no",
+                        style: TextStyle(
+                          color: Color(0xff8D8D8D),
+                          fontSize: 30,
+                        ),
+                      ),
                     ],
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      Text("$ans",style: TextStyle(
-                        fontSize: 100,
-                        color: Color(0xffFFFFFF)
-                      ),),
+                      Text(
+                        "$ans",
+                        style:
+                            TextStyle(fontSize: 100, color: Color(0xffFFFFFF)),
+                      ),
                     ],
                   ),
                 ],
@@ -71,8 +74,8 @@ class _Home_scrrenState extends State<Home_scrren> {
                   InkWell(
                     onTap: () {
                       setState(() {
-                        ans=0;
-                        no="";
+                        ans = 0;
+                        no = "";
                       });
                     },
                     child: Container(
@@ -99,7 +102,7 @@ class _Home_scrrenState extends State<Home_scrren> {
                     child: InkWell(
                       onTap: () {
                         setState(() {
-                          no=no+"%";
+                          no = no + "%";
                         });
                       },
                       child: Text(
@@ -114,11 +117,12 @@ class _Home_scrrenState extends State<Home_scrren> {
                   //div
                   Padding(
                     padding: const EdgeInsets.only(left: 125),
-                    child: InkWell(onTap: () {
-                      setState(() {
-                        no=no+'/';
-                      });
-                    },
+                    child: InkWell(
+                      onTap: () {
+                        setState(() {
+                          no = no + '/';
+                        });
+                      },
                       child: Text(
                         "/",
                         style: TextStyle(
@@ -138,11 +142,12 @@ class _Home_scrrenState extends State<Home_scrren> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   //7
-                  InkWell(onTap: () {
-                    setState(() {
-                      no=no+"7";
-                    });
-                  },
+                  InkWell(
+                    onTap: () {
+                      setState(() {
+                        no = no + "7";
+                      });
+                    },
                     child: Text(
                       "7",
                       style: TextStyle(
@@ -154,11 +159,12 @@ class _Home_scrrenState extends State<Home_scrren> {
                   //8
                   Padding(
                     padding: const EdgeInsets.only(left: 125),
-                    child: InkWell(onTap: () {
-                      setState(() {
-                        no=no+"8";
-                      });
-                    },
+                    child: InkWell(
+                      onTap: () {
+                        setState(() {
+                          no = no + "8";
+                        });
+                      },
                       child: Text(
                         "8",
                         style: TextStyle(
@@ -171,11 +177,12 @@ class _Home_scrrenState extends State<Home_scrren> {
                   //9
                   Padding(
                     padding: const EdgeInsets.only(left: 125),
-                    child: InkWell(onTap: () {
-                      setState(() {
-                        no=no+"9";
-                      });
-                    },
+                    child: InkWell(
+                      onTap: () {
+                        setState(() {
+                          no = no + "9";
+                        });
+                      },
                       child: Text(
                         "9",
                         style: TextStyle(
@@ -188,11 +195,12 @@ class _Home_scrrenState extends State<Home_scrren> {
                   //MULTI
                   Padding(
                     padding: const EdgeInsets.only(left: 125),
-                    child: InkWell(onTap: () {
-                      setState(() {
-                        no=no+"*";
-                      });
-                    },
+                    child: InkWell(
+                      onTap: () {
+                        setState(() {
+                          no = no + "*";
+                        });
+                      },
                       child: Text(
                         "*",
                         style: TextStyle(
@@ -212,11 +220,12 @@ class _Home_scrrenState extends State<Home_scrren> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   //4
-                  InkWell(onTap: () {
-                   setState(() {
-                     no=no+"4";
-                   });
-                  },
+                  InkWell(
+                    onTap: () {
+                      setState(() {
+                        no = no + "4";
+                      });
+                    },
                     child: Text(
                       "4",
                       style: TextStyle(
@@ -228,11 +237,12 @@ class _Home_scrrenState extends State<Home_scrren> {
                   //5
                   Padding(
                     padding: const EdgeInsets.only(left: 125),
-                    child: InkWell(onTap: () {
-                      setState(() {
-                        no=no+"5";
-                      });
-                    },
+                    child: InkWell(
+                      onTap: () {
+                        setState(() {
+                          no = no + "5";
+                        });
+                      },
                       child: Text(
                         "5",
                         style: TextStyle(
@@ -245,11 +255,12 @@ class _Home_scrrenState extends State<Home_scrren> {
                   //6
                   Padding(
                     padding: const EdgeInsets.only(left: 125),
-                    child: InkWell(onTap: () {
-                      setState(() {
-                        no=no+"6";
-                      });
-                    },
+                    child: InkWell(
+                      onTap: () {
+                        setState(() {
+                          no = no + "6";
+                        });
+                      },
                       child: Text(
                         "6",
                         style: TextStyle(
@@ -262,11 +273,12 @@ class _Home_scrrenState extends State<Home_scrren> {
                   //SUB
                   Padding(
                     padding: const EdgeInsets.only(left: 125),
-                    child: InkWell(onTap: () {
-                      setState(() {
-                        no=no+"-";
-                      });
-                    },
+                    child: InkWell(
+                      onTap: () {
+                        setState(() {
+                          no = no + "-";
+                        });
+                      },
                       child: Text(
                         "-",
                         style: TextStyle(
@@ -286,11 +298,12 @@ class _Home_scrrenState extends State<Home_scrren> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   //1
-                  InkWell(onTap: () {
-                    setState(() {
-                      no=no+"1";
-                    });
-                  },
+                  InkWell(
+                    onTap: () {
+                      setState(() {
+                        no = no + "1";
+                      });
+                    },
                     child: Text(
                       "1",
                       style: TextStyle(
@@ -302,11 +315,12 @@ class _Home_scrrenState extends State<Home_scrren> {
                   //2
                   Padding(
                     padding: const EdgeInsets.only(left: 125),
-                    child: InkWell(onTap: () {
-                      setState(() {
-                        no=no+"2";
-                      });
-                    },
+                    child: InkWell(
+                      onTap: () {
+                        setState(() {
+                          no = no + "2";
+                        });
+                      },
                       child: Text(
                         "2",
                         style: TextStyle(
@@ -319,11 +333,12 @@ class _Home_scrrenState extends State<Home_scrren> {
                   //3
                   Padding(
                     padding: const EdgeInsets.only(left: 125),
-                    child: InkWell(onTap: () {
-                      setState(() {
-                        no=no+"3";
-                      });
-                    },
+                    child: InkWell(
+                      onTap: () {
+                        setState(() {
+                          no = no + "3";
+                        });
+                      },
                       child: Text(
                         "3",
                         style: TextStyle(
@@ -336,11 +351,12 @@ class _Home_scrrenState extends State<Home_scrren> {
                   //Sum
                   Padding(
                     padding: const EdgeInsets.only(left: 125),
-                    child: InkWell(onTap: () {
-                      setState(() {
-                        no=no+"+";
-                      });
-                    },
+                    child: InkWell(
+                      onTap: () {
+                        setState(() {
+                          no = no + "+";
+                        });
+                      },
                       child: Text(
                         "+",
                         style: TextStyle(
@@ -360,11 +376,12 @@ class _Home_scrrenState extends State<Home_scrren> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   //00
-                  InkWell(onTap: () {
-                    setState(() {
-                      no=no+"00";
-                    });
-                  },
+                  InkWell(
+                    onTap: () {
+                      setState(() {
+                        no = no + "00";
+                      });
+                    },
                     child: Text(
                       "00",
                       style: TextStyle(
@@ -376,11 +393,12 @@ class _Home_scrrenState extends State<Home_scrren> {
                   //0
                   Padding(
                     padding: const EdgeInsets.only(left: 125),
-                    child: InkWell(onTap: () {
-                      setState(() {
-                        no=no+"0";
-                      });
-                    },
+                    child: InkWell(
+                      onTap: () {
+                        setState(() {
+                          no = no + "0";
+                        });
+                      },
                       child: Text(
                         "0",
                         style: TextStyle(
@@ -393,11 +411,12 @@ class _Home_scrrenState extends State<Home_scrren> {
                   //POINT
                   Padding(
                     padding: const EdgeInsets.only(left: 125),
-                    child: InkWell(onTap: () {
-                      setState(() {
-                        no=no+".";
-                      });
-                    },
+                    child: InkWell(
+                      onTap: () {
+                        setState(() {
+                          no = no + ".";
+                        });
+                      },
                       child: Text(
                         ".",
                         style: TextStyle(
@@ -409,10 +428,13 @@ class _Home_scrrenState extends State<Home_scrren> {
                   ),
                   //ANS
                   Padding(
-                    padding: const EdgeInsets.only(left: 99,),
-                    child: InkWell(onTap: () {
-                      Calculat();
-                    },
+                    padding: const EdgeInsets.only(
+                      left: 99,
+                    ),
+                    child: InkWell(
+                      onTap: () {
+                        Calculat();
+                      },
                       child: Container(
                         width: 50,
                         height: 50,
@@ -421,10 +443,13 @@ class _Home_scrrenState extends State<Home_scrren> {
                           color: Color(0xffFF5A66),
                         ),
                         child: Center(
-                          child: Text("=",style: TextStyle(
-                            fontSize: 30,
-                            color: Colors.white,
-                          ),),
+                          child: Text(
+                            "=",
+                            style: TextStyle(
+                              fontSize: 30,
+                              color: Colors.white,
+                            ),
+                          ),
                         ),
                       ),
                     ),
@@ -438,32 +463,49 @@ class _Home_scrrenState extends State<Home_scrren> {
       backgroundColor: Color(0xff2D2E32),
     );
   }
-  void Calculat()
-  {
-    String First="",last="";
-    int opr =0;
 
-    for(i=0;i<no.length;i++)
-      {
-        if(no[i]!='+' && no[i]!='-' && no[i]!='*' && no[i]!='/' && no[i]!='%')
-          {
-            First=First+no[i];
-          }
-        else
-          {
-            opr=i;
-            break;
-          }
+  void Calculat() {
+    String First = "", last = "";
+    int opr = 0;
+
+    for (i = 0; i < no.length; i++) {
+      if (no[i] != '+' &&
+          no[i] != '-' &&
+          no[i] != '*' &&
+          no[i] != '/' &&
+          no[i] != '%' ){
+        First = First + no[i];
       }
-    for(j=opr+1;j<no.length;j++)
-      {
-        last=last+no[j];
-      }
-    setState(() {
-      if(opr=='+')
+      else if(no[i] == ".")
         {
-          ans=int.parse(First)+int.parse(last);
+          continue;
         }
+      else {
+        opr = i;
+        break;
+      }
+    }
+    for (j = opr + 1; j < no.length; j++) {
+      last = last + no[j];
+    }
+    setState(() {
+      switch (no[i]) {
+        case '+':
+          ans = double.parse(First) + double.parse(last);
+          break;
+        case '-':
+          ans = double.parse(First) - double.parse(last);
+          break;
+        case '*':
+          ans = double.parse(First) * double.parse(last);
+          break;
+        case '/':
+          ans = (double.parse(First) / double.parse(last));
+          break;
+        case '%':
+          ans = double.parse(First) % double.parse(last);
+          break;
+      }
     });
   }
 }
